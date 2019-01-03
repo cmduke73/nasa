@@ -1,0 +1,18 @@
+<html>
+
+<body>
+
+  <script>
+     let key =  'g7hv9ZGtURaFopObgeayBK9PRFXBWTUbxcYFubt4';
+    var url = `https://api.nasa.gov/planetary/apod?api_key=${key}&date=${date}`;
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url);
+    xhr.send();
+
+    xhr.onload = function(){
+      let result = JSON.parse(xhr.response);
+    }
+    </script>
+</body>
+
